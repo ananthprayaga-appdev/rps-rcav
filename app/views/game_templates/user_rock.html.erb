@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>We played rock!</h1>
+
+  <% comp_move = ["rock", "paper", "scissors"].sample %>
+
+  <h1>
+    They played <%= comp_move %>!
+  </h1>
+
+  <% if comp_move == "rock" %>
+    <h2> We tied! </h2>
+  <% elsif comp_move == "paper" %>
+    <h2> We lost! </h2>
+  <% elsif comp_move == "scissors" %>
+    <h2> We won! </h2>
+  <% end %>
+
+
+</body>
+</html>
